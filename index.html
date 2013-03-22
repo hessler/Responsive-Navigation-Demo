@@ -1,0 +1,80 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Responsive Navigation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+
+<!--
+	Side nav only visible on mobile. Received "top_nav" div from header (below)
+	when on mobile, swaps back for non-mobile.
+-->
+<div id="side_nav">
+	<div id="side_nav_close"><div class="label">Close</div></div>
+</div>
+
+<!--
+	Menu bar fixed to top of window. Only visible on mobile.
+-->
+<div id="menu_bar">
+	<div id="mobile_menu"></div>
+	<div id="mobile_top"></div>
+</div>
+
+<!--
+	Wrapper always visible.
+-->
+<div id="wrapper">
+
+	<!--
+		Header not visible on mobile. For mobile, the div "top_nav" is 
+		physically removed from header and placed in "side_nav" (above),
+		and swaps back for non-mobile.
+	-->
+	<div id="header">
+		<div id="top_nav">
+			<ul>
+				<li><a href="#">First</a></li>
+				<li><a href="#">Second</a>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Third</a>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Fourth</a></li>
+				<li><a href="#">Fifth</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!--
+		Container always visible.
+	-->
+	<div id="container">
+		<h1>Responsive Navigation</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis purus molestie eros condimentum sed condimentum enim dignissim. Curabitur condimentum eros a ipsum lacinia ac pulvinar lorem iaculis. Aenean vel tellus non eros rhoncus facilisis. Praesent quis dolor massa, vel consectetur nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vitae turpis est, sit amet adipiscing odio. Suspendisse non neque metus. Pellentesque posuere porta nisl nec tincidunt. Nullam nibh nibh, laoreet vel semper vel, fermentum id urna. Nullam scelerisque hendrerit neque vel mattis. Donec orci est, pharetra sed porta vitae, interdum id justo. In hac habitasse platea dictumst.</p>
+		<p>Nunc ac sem metus. Curabitur sit amet lectus eros. Pellentesque in mi magna, eget congue lectus. Fusce dignissim faucibus urna, non commodo nulla aliquet at. Nullam eu urna non sapien faucibus molestie nec ac elit. Suspendisse nec dui sit amet nisi bibendum gravida non sed erat. Quisque laoreet, dolor vel tempus commodo, diam sem elementum arcu, sed cursus justo purus a ante. Duis rhoncus urna ac mauris malesuada congue.</p>
+		<p>Sed laoreet massa nec tortor lacinia et eleifend dolor sodales. Praesent mollis mattis mauris, a interdum diam pharetra vel. Phasellus dui felis, volutpat a laoreet vel, egestas nec mi. Suspendisse ut varius sem. Morbi a justo arcu. Vivamus nibh urna, bibendum non auctor id, elementum ac ligula. Morbi nec ipsum leo, sit amet dignissim augue. Donec imperdiet dolor ac arcu consequat adipiscing ut vel diam. Vestibulum laoreet arcu vel nisl feugiat sodales. Vivamus velit ipsum, placerat et pharetra a, aliquam sit amet velit.</p>
+		<p>Vestibulum mattis sapien vel nibh porttitor sed vestibulum elit volutpat. Phasellus commodo vestibulum risus, sed laoreet nunc feugiat et. Suspendisse nisl nisi, commodo in volutpat eleifend, fringilla et sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque pharetra gravida urna vel gravida. Pellentesque pretium est mauris. Cras egestas enim ac diam tincidunt a posuere eros accumsan. Aliquam tempor tellus eu lectus aliquam sed rhoncus ligula iaculis. Nullam nunc enim, vestibulum sed sollicitudin quis, tincidunt sed magna. Praesent dui orci, commodo id vehicula quis, semper a elit. Ut eu ultrices lectus. Mauris malesuada justo vitae nibh pharetra et cursus nisl convallis. Praesent at mauris id velit dictum porttitor.</p>
+		<p>Sed vestibulum mauris bibendum lectus gravida in adipiscing nibh convallis. Nullam cursus, velit ut scelerisque pulvinar, libero mauris lacinia metus, a convallis neque augue ut nibh. Pellentesque vitae ante sapien, non accumsan nulla. Vivamus commodo fringilla laoreet. Maecenas eros velit, hendrerit at commodo in, imperdiet vel tortor. Pellentesque ante urna, interdum et imperdiet eget, suscipit at est. Etiam molestie nunc eu lorem accumsan convallis. Nulla at ante a elit ullamcorper congue et tincidunt tellus. Proin malesuada gravida sem. Aenean iaculis cursus sapien a vulputate. Phasellus sapien nisl, bibendum nec lobortis sed, viverra nec nulla. Ut hendrerit ante nunc, in pretium tortor.</p>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
