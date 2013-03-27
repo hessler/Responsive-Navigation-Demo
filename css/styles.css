@@ -73,7 +73,7 @@ img, img a, a img, img a:link {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	width: 980px;
+	width: 100%;
 }
 #top_nav ul li {
 	display: inline;
